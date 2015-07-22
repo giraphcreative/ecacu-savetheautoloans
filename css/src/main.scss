@@ -1,7 +1,7 @@
 
 
 // color variables
-$yellow: #F3C25B;
+$yellow: #F9C626;
 $teal: #2FB6E4;
 $green: #8B9E74;
 $red: #831528;
@@ -36,6 +36,7 @@ header {
 	position: relative;
 	background: url(../img/bg-header.jpg) center center no-repeat;
 	background-size: cover;
+	border-bottom: 30px solid $yellow;
 
 	img {
 		display: block;
@@ -59,7 +60,8 @@ header {
 	text-align: center;
 	
 	@include respond-to( 768px ) {
-		padding: 20px 40px;
+		position: relative;
+		padding: 20px 40px 50px;
 	}
 
 	.calculator {
@@ -86,20 +88,17 @@ header {
 		}
 	}
 
-	.half.right.first {
-		padding: 30px 10px 0;
+	.half.content{
+		padding: 0;
+
+		img {
+			display: block;
+		}
 	
 		@include respond-to( 768px ) {
-			padding: 30px 10px 130px;
-		}
-	}
-
-	.corner {
-		@include respond-to( 768px ) {
 			position: absolute;
-			right: 0;
 			bottom: 0;
-			max-width: 50%;
+			right: 0;
 		}
 	}
 }
